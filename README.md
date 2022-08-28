@@ -4,10 +4,19 @@ ___
 
 A file explorer using the GitHub API
 
-* [GitHub tree API](https://docs.github.com/en/rest/git/trees)
-* [Primer Octicons](https://primer.style/octicons/)
-* [Theme UI Polaris](https://github.com/system-ui/theme-ui/blob/ec4cdc977941d5174f876128f4ed40256a2b863f/packages/preset-polaris/src/index.ts)
+## Built with
 
+- [GitHub trees API](https://docs.github.com/en/rest/git/trees)
+- [Primer Octicons](https://primer.style/octicons/)
+- [Theme UI Polaris](https://github.com/system-ui/theme-ui/blob/ec4cdc977941d5174f876128f4ed40256a2b863f/packages/preset-polaris/src/index.ts)
+
+
+## Usage
+
+- Install dependencies: `yarn install`
+- Build application (both frontend and backend in http://localhost:8080): `yarn build`
+    - _Some browsers automatically redirects you to `https` so make sure to disable the automatic redirect_
+- Run application (port 8080): `yarn start`
 
 <details>
 <summary>Bootstrapped from https://github.com/gianluca-venturini/express-react-webpack-starter</summary>
