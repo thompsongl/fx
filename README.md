@@ -10,7 +10,7 @@ A file explorer using the GitHub API
 
 
 <details>
-<summary>Bootstrapped from [gianluca-venturini/express-react-webpack-starter](https://github.com/gianluca-venturini/express-react-webpack-starter)</summary>
+<summary>Bootstrapped from https://github.com/gianluca-venturini/express-react-webpack-starter</summary>
 
 
 # Express React Webpack starter
