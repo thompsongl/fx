@@ -1,0 +1,9 @@
+dist
+.eslintrc
+package.json
+webpack.config.js
+tsconfig.json
+.prettierrc
+.vscode
+*.md
+*.html

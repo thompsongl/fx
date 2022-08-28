@@ -1,9 +1,7 @@
 describe('Example test suite', () => {
+  it('Example test', () => {
+    const a = true;
 
-    it('Example test', () => {
-        const a = true;
-
-        expect(a).toBe(true);
-    });
-    
+    expect(a).toBe(true);
+  });
 });

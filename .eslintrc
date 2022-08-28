@@ -1,0 +1,18 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["prettier", "react-hooks"],
+  "rules": {
+    "prefer-template": "error",
+    "quotes": ["warn", "single", "avoid-escape"],
+
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "off"
+  }
+}
