@@ -1,0 +1,79 @@
+.Button {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
+.Button:disabled {
+    cursor: default
+}
+
+.Button--plain {
+    background-color: transparent;
+    border: none;
+}
+.Button--plain:disabled {
+    color: var(--color-muted-600);
+}
+
+.Button:not(.Button--plain) {
+    appearance: none;
+    display: inline-block;
+    text-align: center;
+    line-height: inherit;
+    text-decoration: none;
+    font-size: inherit;
+}
+
+.Button--primary,
+.Button--secondary {
+    padding: var(--space-2);
+    border-radius: var(--space-1);
+    color: var(--color-background);
+    font-weight: var(--weight-bold);
+}
+.Button--primary:hover,
+.Button--primary:active,
+.Button--primary:focus,
+.Button--secondary:hover,
+.Button--secondary:active,
+.Button--secondary:focus {
+    text-decoration: underline;
+}
+
+.Button--primary {
+    background-color: var(--color-primary);
+}
+.Button--primary:disabled {
+    background-color: var(--color-muted-600);
+}
+
+.Button--secondary {
+    background-color: var(--color-darken);
+}
+.Button--secondary:disabled {
+    background-color: var(--color-muted-600);
+}
+
+.Button--create,
+.Button--delete {
+    background-color: transparent;
+}
+.Button--create:hover,
+.Button--create:active,
+.Button--create:focus,
+.Button--delete:hover,
+.Button--delete:active,
+.Button--delete:focus {
+    transform: scale(1.2);
+}
+.Button--create:hover,
+.Button--create:active,
+.Button--create:focus {
+    color: var(--color-secondary);
+}
+.Button--delete:hover,
+.Button--delete:active,
+.Button--delete:focus {
+    color: var(--color-danger);
+}
