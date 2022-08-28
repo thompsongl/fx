@@ -1,3 +1,18 @@
+# fx
+
+___
+
+A file explorer using the GitHub API
+
+* [GitHub tree API](https://docs.github.com/en/rest/git/trees)
+* [Primer Octicons](https://primer.style/octicons/)
+* [Theme UI Polaris](https://github.com/system-ui/theme-ui/blob/ec4cdc977941d5174f876128f4ed40256a2b863f/packages/preset-polaris/src/index.ts)
+
+
+<details>
+<summary>Bootstrapped from [gianluca-venturini/express-react-webpack-starter](https://github.com/gianluca-venturini/express-react-webpack-starter)</summary>
+
+
 # Express React Webpack starter
 A starter Webpack 4 configuration for basic projects with Express and React.
 
@@ -35,3 +50,4 @@ A starter Webpack 4 configuration for basic projects with Express and React.
 ## Useful links
 - Typescript guide: https://basarat.gitbook.io/typescript/
 - VSCode custom settings: https://github.com/gianluca-venturini/env_confs/tree/master/vs_codet
+</details>
