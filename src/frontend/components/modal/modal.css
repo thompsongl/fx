@@ -1,0 +1,16 @@
+.Modal {
+    --color-modal: rgba(168,168,168, 0.85); /* variation on --color-muted */
+
+    position: fixed;
+    inset: 0;
+    background-color: var(--color-modal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Modal__body {
+    background-color: var(--color-background);
+    padding: var(--space-3);
+    inline-size: 50%;
+}
