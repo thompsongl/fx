@@ -1,0 +1,51 @@
+.Node-isSelected > .Node__wrapper {
+    background-color: var(--color-gray);
+}
+
+.Node__wrapper {
+    display: flex;
+    flex-grow: 1;
+}
+.Node__wrapper:hover,
+.Node__wrapper:focus,
+.Node__wrapper:active {
+    outline: 1px solid var(--color-gray);
+}
+
+.Node__toggle {
+    flex-grow: 0;
+    padding: 0;
+    inline-size: var(--toggle-size);
+    background-color: transparent;
+    border: none;
+}
+.Node__toggle:hover,
+.Node__toggle:active,
+.Node__toggle:focus {
+    color: var(--color-darken);
+    transform: scale(1.2);
+}
+.Node__toggle-isOpen svg {
+    transform: rotate(90deg);
+}
+
+.Node__button {
+    flex-grow: 1;
+    align-items: center;
+    text-align: start;
+    padding-block: var(--space-1);
+    padding-inline: 0;
+}
+.Node__button,
+.Node__toggle {
+    border: 1px solid transparent;
+}
+
+.Node__button--file {
+    margin-inline-start: var(--toggle-size);
+}
+
+.Node__icon {
+    color: var(--color-muted-600);
+    padding-inline-end: var(--space-2);
+}

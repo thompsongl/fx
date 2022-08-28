@@ -1,0 +1,215 @@
+body {
+    font-family: var(--font-base);
+    color: var(--color-text);
+    font-size: var(--fontSize-1);
+    outline-color: var(--color-darken);
+}
+
+*:focus-visible {
+    outline-color: var(--color-darken);
+}
+
+a {
+    color: var(--color-primary);
+    font-weight: var(--weight-bold);
+    text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+    text-decoration: underline;
+}
+
+p, button {
+    color: var(--color-text);
+}
+
+label {
+    padding-block-end: var(--space-1);
+}
+
+input {
+    display: block;
+    inline-size: 100%;
+    max-inline-size: 82ch;
+    padding: var(--space-2);
+    appearance: none;
+    font-size: inherit;
+    line-height: inherit;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-radius: var(--space-1);
+    color: inherit;
+    background-color: transparent;
+    border-color: var(--color-gray);
+}
+
+dt {
+    font-weight: var(--weight-bold);
+    color : var(--color-darken);
+}
+dd {
+    font-family: var(--font-mono);
+    margin-inline-start: var(--space-0);
+    margin-block-start: var(--space-1);
+    margin-block-end: var(--space-2);
+}
+
+.Header {
+    background-color: var(--color-darken);
+    color: var(--color-background);
+    border-block-end: 1px solid var(--color-darken);
+    padding-inline-start: calc(var(--space-3) * 1.5);
+    display: flex;
+    align-items: center;
+    block-size: var(--space-4);
+}
+
+.Header__title {
+    font-family: var(--font-mono);
+    font-size: var(--fontSize-2);
+    font-weight: var(--weight-body);
+    margin-block: 0;
+    vertical-align: middle;
+}
+
+.Header__brand {
+    color: var(--color-primary);
+    font-weight: var(--weight-bold);
+    letter-spacing: -2px;
+    margin-inline-end: var(--space-3);
+}
+
+.Loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    animation: loading steps(4, end) 1s infinite;
+    content: "\2026";
+    inline-size: var(--space-0);
+}
+@keyframes loading {
+    to {
+        width: var(--space-3);
+    }
+}
+
+.Wrapper {
+    block-size: calc(100vh - var(--space-4));
+    overflow-y: hidden;
+    inline-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 800px) {
+    .Wrapper {
+        flex-direction: row;
+    }
+}
+
+.Empty {
+    padding: calc(var(--space-3) * 1.5);
+}
+
+
+.Explorer {
+    block-size: 60%;
+}
+
+.Details {
+    position: relative;
+    background-color: var(--color-muted);
+    block-size: 40%;
+    border-style: solid;
+    border-color: var(--color-darken);
+    border-width: 1px;
+}
+.Details__header {
+    position: sticky;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: var(--space-2);
+    padding-inline: var(--space-2);
+    background-color: var(--color-muted);
+    border-block-end: 1px solid var(--color-darken);
+}
+.Details__nav {
+    display: flex;
+    align-items: center;
+}
+.Details__name {
+    font-size: var(--fontSize-0);
+    font-weight: var(--weight-bold);
+    padding-inline: var(--space-1);
+}
+.Details__data {
+    background-color: var(--color-background);
+    padding-block: var(--space-2);
+    padding-inline: var(--space-3);
+    border-block-end: 1px solid var(--color-darken);
+}
+@media screen and (min-width: 800px) {
+    .Details {
+        border-width: 0;
+        border-inline-start-width: 1px;
+    }
+    .Details__data {
+        position: sticky;
+        /* Calculated in-browser to accound for .Details__header */
+        inset-block-start: calc(var(--space-4) + 4.75px); 
+        inset-inline-start: 0;
+        padding-block: var(--space-3);
+    }
+}
+
+
+.Empty, .Explorer, .Details {
+    inline-size: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+@media screen and (min-width: 800px) {
+    .Explorer, .Details {
+        inline-size: 50%;
+        block-size: 100%;
+    }
+}
+
+.Form {
+    min-inline-size: 36ch;
+    margin-block: auto;
+}
+
+.Form__items {
+    display: flex;
+    flex-direction: column;
+}
+
+.Form__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-block: var(--space-2);
+}
+
+.Examples  {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-block: var(--space-2);
+}
+@media screen and (min-width: 700px) {
+    .Examples {
+        flex-direction: row;
+        margin-block: var(--space-2);
+    }
+}
+
+.Error {
+    background-color: var(--color-danger);
+    color: var(--color-background);
+    padding: var(--space-2);
+}

@@ -1,0 +1,32 @@
+.NodeAlt {
+    block-size: 100%;
+    inline-size: 100%;
+    font-family: var(--font-mono);
+}
+
+.NodeAlt__icon {
+    color: var(--color-darken);
+}
+
+.NodeAlt__button {
+    inline-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    font-size: var(--fontSize-0);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.NodeAlt__button:hover,
+.NodeAlt__button:active,
+.NodeAlt__button:focus {
+    text-decoration: underline;
+}
+
+.NodeAlt__name {
+    display: block;
+    inline-size: 100%;
+    white-space: pre-wrap;
+}

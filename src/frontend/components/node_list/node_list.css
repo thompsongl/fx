@@ -1,0 +1,32 @@
+@import url(./node/node.css);
+
+.NodeList {
+    --toggle-size: calc(var(--space-3) * 1.5);
+    
+    display: block;
+    margin-block: var(--space-2) 0;
+    padding-inline: 0;
+}
+
+.NodeList--nested {
+    margin-block: 0;
+    border-inline-start: 1px solid var(--color-gray);
+}
+
+.NodeList__item {
+    list-style: none;
+    display: block;
+    border: none;
+}
+
+.NodeList__item--empty {
+    color: var(--color-muted-600);
+    margin-inline-start: var(--toggle-size);
+}
+
+.NodeList__item--root {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: var(--space-4);
+    padding-block-end: var(--space-1);
+}

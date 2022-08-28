@@ -1,0 +1,14 @@
+@import url(./node/node.css);
+
+.NodeGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-2);
+    inline-size: 100%;
+    padding: 0;
+    margin-block-start: var(--space-4);
+}
+
+.NodeGrid__item {
+    list-style: none;
+}

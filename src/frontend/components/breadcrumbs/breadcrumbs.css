@@ -1,0 +1,22 @@
+.Breadcrumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.Breadcrumbs__item {
+    padding-inline: 0
+}
+.Breadcrumbs__item:after {
+    content: '/'
+}
+
+.Breadcrumbs__button {
+    font-family: var(--font-mono);
+    font-size: var(--fontSize-0);
+    padding-inline: var(--space-1);
+}
+.Breadcrumbs__button:hover {
+    text-decoration: underline;
+}
