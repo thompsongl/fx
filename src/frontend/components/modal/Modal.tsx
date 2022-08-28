@@ -13,6 +13,8 @@ export const Modal: React.FunctionComponent<ModalProps> = ({
   ...rest
 }) => {
   return isOpen ? (
+    // TODO: Ally: Screen reader support / live region announcements; focus management
+    //       e.g., configurable updateable content; `react-focus-on`
     <div className="Modal" aria-modal {...rest}>
       <div className="Modal__body">{children}</div>
     </div>

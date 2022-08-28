@@ -162,6 +162,7 @@ export const App: React.FunctionComponent = () => {
         </h1>
       </header>
       <div className="Wrapper">
+        {/* TODO: Prime candidate for a UI transition, between empty to populated state */}
         {isEmptyState ? (
           <div className="Empty">
             <div className="Form">
@@ -284,6 +285,8 @@ export const App: React.FunctionComponent = () => {
           </>
         )}
       </div>
+      {/* TODO: Not convinced a modal is the correct interaction paradigm, but the focus is helpful at this juncture.
+                Certainly feels like an inline editing experience makes sense for *create actions. */}
       <Modal isOpen={isModalOpen} onClose={toggleModal}>
         <div className="Form">
           <form onSubmit={onSubmit} autoComplete="off">
