@@ -195,16 +195,18 @@ dd {
     margin-block: var(--space-2);
 }
 
-.Examples  {
+.Examples {
+    margin-block-start: var(--space-4);
+}
+.Examples__list  {
     display: flex;
     flex-direction: column;
     gap: var(--space-2);
-    margin-block: var(--space-2);
+    
 }
 @media screen and (min-width: 700px) {
-    .Examples {
+    .Examples__list {
         flex-direction: row;
-        margin-block: var(--space-2);
     }
 }
 

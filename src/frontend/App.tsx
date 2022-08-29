@@ -189,10 +189,11 @@ export const App: React.FunctionComponent = () => {
                     Submit
                   </Button>
                 </div>
-                <div>
-                  <h3>Sample repositories</h3>
-                </div>
-                <div className="Examples">
+              </form>
+              <div className="Examples">
+                <h3>Sample repositories</h3>
+
+                <div className="Examples__list">
                   <Button
                     variant="secondary"
                     onClick={() => fetchData('elastic/eui')}
@@ -218,7 +219,7 @@ export const App: React.FunctionComponent = () => {
                     microsoft/TypeScript (~57k)
                   </Button>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         ) : (
