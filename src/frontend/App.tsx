@@ -151,7 +151,7 @@ export const App: React.FunctionComponent = () => {
     >
       <header className="Header">
         <h1 className="Header__title">
-          <Button onClick={() => actions.reset()} className="Header__brand">
+          <Button onClick={actions.reset} className="Header__brand">
             fx
           </Button>
           {isLoading ? (

@@ -43,13 +43,15 @@ export const Node: React.FunctionComponent<NodeProps> = ({ node, ...rest }) => {
     'Node__button-isOpen': isOpen,
   });
 
+  const toggleOpen = () => setIsOpen((isOpen) => !isOpen);
+
   return (
     <div className={nodeClass} {...rest}>
       <div className="Node__wrapper">
         {children ? (
           <Button
             className={nodeToggleClass}
-            onClick={() => setIsOpen((isOpen) => !isOpen)}
+            onClick={toggleOpen}
             title={`${isOpen ? 'Collapse' : 'Expand'} directory`}
           >
             <ChevronRightIcon verticalAlign="middle" />
