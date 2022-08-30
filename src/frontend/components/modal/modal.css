@@ -12,5 +12,12 @@
 .Modal__body {
     background-color: var(--color-background);
     padding: var(--space-3);
-    inline-size: 50%;
+    inline-size: 90%;
+    min-inline-size: 42ch;
+}
+@media screen and (min-width: 800px) {
+    .Modal__body {
+        inline-size: 50%;
+        max-inline-size: 82ch;
+    }
 }

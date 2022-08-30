@@ -26,6 +26,7 @@ p, button {
 
 label {
     padding-block-end: var(--space-1);
+    font-weight: var(--weight-bold);
 }
 
 input {
@@ -142,6 +143,7 @@ dd {
     align-items: center;
 }
 .Details__name {
+    color: var(--color-darken);
     font-size: var(--fontSize-0);
     font-weight: var(--weight-bold);
     padding-inline: var(--space-1);
