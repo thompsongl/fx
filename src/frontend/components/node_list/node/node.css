@@ -40,6 +40,9 @@
 .Node__toggle {
     border: 1px solid transparent;
 }
+.Node-isSelected > .Node__wrapper > .Node__button {
+    font-weight: var(--weight-bold);
+}
 
 .Node__button--file {
     margin-inline-start: var(--toggle-size);
